@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+/* メインとなる全体のデザイン */
+h1.main-style {
+	padding: 0.5em;
+	color: #010101;
+	background: #eaf3ff;
+	border-bottom: solid 3px #516ab6;
+}
+
+h2.main-style {
+	padding: 0.25em 0.5em;/*上下 左右の余白*/
+	color: #494949;/*文字色*/
+	background: transparent;/*背景透明に*/
+	border-left: solid 5px #7db4e6;/*左線*/
+}
+
+h3.main-style {
+	margin-top: 2.5em;
+	margin-bottom: 2em;
+	position: relative;
+	padding: 0.6em;
+	background: #e0edff;
+}
+
+h3.main-style:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e0edff;
+  width: 0;
+  height: 0;
+}
+
+hr {
+	border-top: 3px solid #7db4e6;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+/*ここから教科書を参考に記載*/
+
+/* サブナビゲーションのマークアップ例 */
+/* P116-P117 chapter6/c06-02-a */
+
+#ch09-2-a .subnav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+
+/* サブナビゲーションの先頭にマークをつける */
+/* P118-P119 chapter6/c06-02-b */
+
+#ch09-2-b .subnav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#ch09-2-b .subnav a {
+	padding-left: 16px;
+	background: url(images/listmark.png) no-repeat left 0 top 4px;
+	color: #1864b9;
+	text-decoration: none; }
+	color: #0f3f74;
+	text-decoration: underline;
+}
+
+
+/* 「最近の記事」をリストする */
+/* P120-P121 chapter6/c06-02-c */
+
+#ch09-2-c .sidebar {
+	padding: 8px;
+	border: 1px solid #ccc;
+	width: 300px;
+}
+#ch09-2-c .subnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#ch09-2-c .subnav li {
+	overflow: hidden;
+	margin: 1em 0 1em 0;
+}
+#ch09-2-c .subnav .thumb {
+	float: left;
+	width: 100px;
+}
+#ch09-2-c .subnav .summary {
+	margin: 0 0 0 108px;
+}
+#ch09-2-c .subnav a {
+	text-decoration: none;
+}
+
+/* パンくずリストを作成する */
+/* P121-P123 chapter6/c06-02-d */
+
+#ch09-2-d .breadcrumb ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#ch09-2-d .breadcrumb li {
+	
+}
+#ch09-2-d .breadcrumb li::after {
+	
+	color: #999;
+}
+#ch09-2-d .breadcrumb li:last-child::after {
+	
+}
+#ch09-2-d .breadcrumb a {
+	text-decoration: none;
+	color: #1864b9;
+}
+
+
+/* ボックスに枠線をつける */
+/* P132 chapter6/c06-03-a */
+
+#ch09-3-a .item {
+	border: 1px solid #cccccc;
+	width: 300px;
+}
+#ch09-3-a .item h3 {
+	margin: 0.5em 0 0.5em 0;
+	font-size: 16px;
+}
+#ch09-3-a .item p {
+	margin: 0;
+	font-size: 14px;
+	color: #666666;
+}
+
+
+/* ボックスの右と下に枠線をつける */
+/* P134 chapter6/c06-03-b */
+
+#ch09-3-b .item {
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	width: 300px;
+}
+#ch09-3-b .item h3 {
+	margin: 0.5em 0 0.5em 0;
+	font-size: 16px;
+}
+#ch09-3-b .item p {
+	margin: 0;
+	font-size: 14px;
+	color: #666666;
+}
+
+/* コンテンツと枠線の間にパディングを設ける */
+/* P135 chapter6/c06-03-c */
+
+#ch09-3-c .item {
+	border: 1px solid #ccc;
+	padding: 8px;
+	width: 300px;
+}
+#ch09-3-c .item h3 {
+	margin: 0.5em 0 0.5em 0;
+	font-size: 16px;
+}
+#ch09-3-c .item p {
+	margin: 0;
+	font-size: 14px;
+	color: #666;
+}
+
+/* ボックスを縦に並べる */
+/* P137 chapter6/c06-04-a */
+
+#ch09-4-a .item {
+	margin: 16px;
+	border: 1px solid #ccc;
+	padding: 8px;
+	width: 300px;
+}
+#ch09-4-a .item h3 {
+	margin: 0.5em 0 0.5em 0;
+	font-size: 16px;
+}
+#ch09-4-a .item p {
+	margin: 0;
+	font-size: 14px;
+	color: #666;
+}
+
+/* ボックスを横に並べる */
+/* P139-P140 chapter6/c06-04-b */
+
+#ch09-4-b .wrapper {
+		overflow: hidden;
+}
+
+#ch09-4-b .item {
+	float: left;	
+	margin: 8px 0 8px 8px;
+	border: 1px solid #ccc;
+	padding: 8px;
+	width: 300px;
+}
+#ch09-4-b .item h3 {
+	margin: 0.5em 0 0.5em 0;
+	font-size: 16px;
+}
+#ch09-4-b .item p {
+	margin: 0;
+	font-size: 14px;
+	color: #666;
+}
+
+/* ボックスに背景色をつける */
+/* P143 chapter6/c06-05-a */
+
+#ch09-5-a .item {
+	margin: 8px;
+	border: 1px solid #ccc;
+	padding: 8px;
+	width: 300px;
+		background-color: #fafafa;
+}
+#ch09-5-a .item h3 {
+	margin: 0.5em 0 0.5em 0;
+	font-size: 16px;
+}
+#ch09-5-a .item p {
+	margin: 0;
+	font-size: 14px;
+	color: #666;
+}
+
+/* ボックスを背景画像で塗りつぶす */
+/* P144 chapter6/c06-05-b */
+
+#ch09-5-b {
+	margin: 0;
+}
+#ch09-5-b .item {
+	margin: 8px;
+	border: 1px solid #ccc;
+	padding: 8px;
+	width: 300px;
+	background: url(images/bg1204.png) #fafafa;
+}
+#ch09-5-b .item h3 {
+	margin: 0.5em 0 0.5em 0;
+	font-size: 16px;
+}
+#ch09-5-b .item p {
+	margin: 0;
+	font-size: 14px;
+	color: #666;
+}
+
+/* 複数の背景画像を指定する */
+/* P148 chapter6/c06-05-c */
+
+#ch09-5-c blockquote {
+	margin: 0;
+	padding: 32px;
+	width: 300px;
+	background: url(images/quote-left.png) no-repeat left 10px top 20px,
+				url(images/quote-right.png) no-repeat right 10px bottom 20px,
+				#eee;
+}
+
+/* ボックスの角を丸くする */
+/* P149 chapter6/c06-05-d */
+
+#ch09-5-d blockquote {
+	border-radius: 10px;
+	margin: 0;
+	padding: 32px;
+	width: 300px;
+	background: url(images/quote-left.png) no-repeat left 10px top 20px,
+				url(images/quote-right.png) no-repeat right 10px bottom 20px,
+				#eee;
+}
