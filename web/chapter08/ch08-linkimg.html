@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>リンクの設定と画像の表示</title>
+<!-- 外部ファイルのch08-style.cssを読み込む -->
+
+
+</head>
+<body>
+
+<h1 class="main-style">リンクの設定と画像の表示</h1>
+
+<hr>
+
+<h2 class="main-style">テキストにリンクを追加する</h2>
+
+<h3 class="main-style">別のサイトへリンクする</h3>
+<!-- P82 chapter5/c05-01-a/index.html -->
+<section id="ch08-1-a">
+	<a href="http://www.sbcr.jp">SBクリエイティブ社のWebサイトへ</a>
+</section>
+
+<h3 class="main-style">リンクを別タブで開く</h3>
+<!-- P82 chapter5/c05-01-b/index.html -->
+<section id="ch08-1-b">
+	<a href="http://www.sbcr.jp" target="_blank">SBクリエイティブ社のWebサイトへ</a>
+</section>
+
+<h3 class="main-style">サイト内の別のページへリンクする</h3>
+<!-- P85-P88 chapter5/c05-01-c/index.html -->
+<section id="ch08-1-c">
+	<a href="c05-01-c/index.html" target="_blank">「サイト内の別のページへリンクする」 c05-01-cフォルダ</a>
+</section>
+
+<h3 class="main-style">ページ内の特定の場所へリンクする</h3>
+<!-- P89 chapter5/c05-01-d/index.html -->
+<section id="ch08-1-d">
+<h1>sans-serif、serif 以外にもあるCSSフォントファミリーのキーワード</h1>
+<p>CSSでフォントを指定するにはfont-familyプロパティを使用します。カンマで区切って複数のフォントを指定しておくと、1つ目から順に探して最初に見つかったフォントで表示されます。どれも見つからなかったときの保険として、必ず最後に一般的なフォントファミリーを指すキーワードを入れておきます。</p>
+
+<ul>
+	<li><a href="#headline1037">5種類の一般フォントファミリーキーワード</a></li>
+	<li><a href="#headline1040">sans-serif</a></li>
+	<li><a href="#headline1106">serif</li>
+	<li>cursive</li>
+	<li>fantasy</li>
+	<li>monospace</li>
+</ul>
+<h2 id="headline1037">5種類の一般フォントファミリーキーワード</h2>
+<p>特定のフォントではなく一般的なフォントの種類を指すキーワードには、sans-serif、serif、cursive、fantasy、monospaceの5種類があります。</p>
+<h2 id="headline1040">sans-serif</h2>
+<p>欧文フォントでは「サンセリフ」を指すキーワードです。日本語では「ゴシック体」が該当します。</p>
+<pre>font-family: sans-serif;</pre>
+<h2 id="headline1106">serif</h2>
+<p>欧文フォントでは「セリフ」を指すキーワードです。日本語では「明朝体」が該当します。</p>
+<p><code>font-family: serif;</code></p>
+<h2>cursive</h2>
+<p>手書き文字を指すキーワードです。欧文書体はOS、ブラウザによって表示するフォントが大きく異なります。また、日本語はこれに対応するフォントがなく、明朝体などで表示されます。使ってもあまり意味がないためほとんど使われません。</p>
+<p><code>font-family: cursive;</code></p>
+<h2>fantasy</h2>
+<p>装飾書体を表すキーワードです。cursive同様、欧文書体はOS、ブラウザによって表示するフォントが大きく異なります。また、日本語はこれに対応するフォントがなく、ゴシック体などで表示されます。使ってもあまり意味がないためほとんど使われません。</p>
+<p><code>font-family: fantasy;</code></p>
+<h2>monospace</h2>
+<p>san-serif、seif以外で唯一よく使われるのがmonospaceです。等幅フォントを指します。等幅フォントとは1文字1文字の横幅が同じに作られた書体です。プログラムのソースコードを表示するときなどによく使われます。</p>
+<p><code>font-family: monospace;</code></p>
+</section>
+
+<hr>
+
+<h2 class="main-style">テキストリンクにCSSを適用する</h2>
+
+<h3 class="main-style">リンクの状態に合わせて表示を変える</h3>
+<!-- P92-P93 chapter5/c05-02-a/index.html -->
+<section id="ch08-2-a">
+	<p>本書は、アクセス状況からサイトの改善につなげるためのすべての知識を網羅しています。詳しくは<a href="http://www.sbcr.jp">SBクリエイティブ社のWebサイト</a>をご覧ください。</p>
+</section>
+
+<h3 class="main-style">実践的なWebデザインで書かれるCSSの例</h3>
+<!-- P94 chapter5/c05-02-b/index.html -->
+<section id="ch08-2-b">
+	<p>本書は、アクセス状況からサイトの改善につなげるためのすべての知識を網羅しています。詳しくは<a href="http://www.sbcr.jp">SBクリエイティブ社のWebサイト</a>をご覧ください。</p>
+</section>
+
+<h3 class="main-style">リンクの下線を消して、ホバーの時に表示させる</h3>
+<!-- P94-P95 chapter5/c05-02-c/index.html -->
+<section id="ch08-2-c">
+<p>お知らせ</p>
+<ul>
+	<!-- リンクはダミーで、リンク先はありません -->
+	<li><a href="news/1966/">お友達紹介キャンペーン、好評につき期間を延長しました</a></li>
+	<li><a href="press/1923/">プレスリリース：役員体制の人事異動について</a></li>
+	<li><a href="press/1899/">プレスリリース：若手起業家支援プロジェクトの概要発表</a></li>
+</ul>
+</section>
+
+<h3 class="main-style">別タブで開くリンクの後ろにアイコンを表示する</h3>
+<!-- P96 chapter5/c05-02-d/index.html -->
+<section id="ch08-2-d">
+	<ul>
+		<li><a href="first-login.html">はじめてログインするときは</a></li>
+		<li><a href="token-help.html" target="_blank">ワンタイムパスワードの使い方ヘルプ</a></li>
+	</ul>
+</section>
+
+<hr>
+
+<h2 class="main-style">画像を表示する</h2>
+
+<h3 class="main-style">画像を表示する</h3>
+<!-- P100-P101 chapter5/c05-03-a/index.html -->
+<section id="ch08-3-a">
+<img src="image/image1646.jpg" width="904" height="574"alt="陽が沈む">
+</section>
+
+<h3 class="main-style">表示する画像サイズが伸縮されるようにする</h3>
+<!-- P102 chapter5/c05-03-b/index.html -->
+<section id="ch08-3-b">
+	<a href="c05-03-b.html" target="_blank">表示する画像サイズが伸縮されるようにする</a>
+</section>
+
+<h3 class="main-style">画像を縮小して表示する</h3>
+<!-- P103 chapter5/c05-03-c/index.html -->
+<section id="ch08-3-c">
+<div class="thumbnail">
+	<img src="image/image1646.jpg" width="904" height="572" alt="陽が沈む" class="img-responsive">
+</div>
+</section>
+
+<hr>
+
+<h2 class="main-style">画像にリンクをつける</h2>
+
+<h3 class="main-style">画像にリンクをつける</h3>
+<!-- P104 chapter5/c05-04-a/index.html -->
+<section id="ch08-4-a">
+<a href="http://studio947.net">
+	<img src="image/image0320.jpg" width="396" height="292" alt="積み木">
+</a>
+</section>
+
+<h3 class="main-style">画像もテキストもクリックできるようにする</h3>
+<!-- P104-P105 chapter5/c05-04-b/index.html -->
+<section id="ch08-4-b">
+<a href="http://studio947.net">
+	<div>
+		<img src="image/image0320.jpg" width="396" height="292" alt="積み木">
+	</div>
+	<p>カラフルな積み木のセット</p>
+</a>
+</section>
+
+<h3 class="main-style">ホバーしたとき画像の透明度を変更する</h3>
+<!-- P105-P106 chapter5/c05-04-c/index.html -->
+<section id="ch08-4-c">
+<a href="http://studio947.net">
+	<div>
+		<img src="image/image0320.jpg" width="396" height="292" alt="積み木">
+	</div>
+	<p>カラフルな積み木のセット</p>
+</a>
+</section>
+
+<h3 class="main-style">ホバーしたとき画像に枠線をつける</h3>
+<!-- P107 chapter5/c05-04-d/index.html -->
+<section id="ch08-4-d">
+<a href="http://studio947.net">
+	<div>
+		<img src="image/image0320.jpg" width="396" height="292" alt="積み木" class="frame">
+	</div>
+	<p>カラフルな積み木のセット</p>
+</a>
+</section>
+
+<hr>
+
+<h2 class="main-style">画像にテキストを回り込ませる</h2>
+
+<h3 class="main-style">画像にテキストを回り込ませる</h3>
+<!-- P108-P110 chapter5/c05-05-a/index.html -->
+<section id="ch08-5-a">
+<div class="float-clear">
+	<div class="float-box">
+		<img src="image/orangedrip.png" width="157" height="140" alt="">
+	</div>
+	<p>「新しいコーヒーとの出会い」を提供する Orange Drip Café が、3号店となる福岡駅前店を6月28日正式オープンします。開店に先立ち、プレオープン企画として6月21日から6月27日まで、1日40名様をご招待。レギュラードリンクとフードのほか、限定商品を割引価格でご提供いたします。</p>
+	<p>プレオープン企画に参加ご希望の方は、本サイトの「プレオープン参加お申し込み」フォームに必要事項を記入してください。抽選で1日40名様をご招待いたします。応募締め切りは5月31日まで。皆様のご応募を心よりお待ちしております。</p>
+</div>
+</section>
+
+<hr>
+
+</body>
+</html>

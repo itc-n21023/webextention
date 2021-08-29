@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+/* メインとなる全体のデザイン */
+h1.main-style {
+	padding: 0.5em;
+	color: #010101;
+	background: #eaf3ff;
+	border-bottom: solid 3px #516ab6;
+}
+
+h2.main-style {
+	padding: 0.25em 0.5em;/*上下 左右の余白*/
+	color: #494949;/*文字色*/
+	background: transparent;/*背景透明に*/
+	border-left: solid 5px #7db4e6;/*左線*/
+}
+
+h3.main-style {
+	margin-top: 2.5em;
+	margin-bottom: 2em;
+	position: relative;
+	padding: 0.6em;
+	background: #e0edff;
+}
+
+h3.main-style:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e0edff;
+  width: 0;
+  height: 0;
+}
+
+hr {
+	border-top: 3px solid #7db4e6;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+/*ここから教科書を参考に記載*/
+
+/* 文字サイズ */
+/* P54 chapter4/c04-01-a */
+
+#ch07-1-a {
+
+}
+
+#ch07-1-a div {
+
+}
+
+
+/* P55 chapter4/c04-01-b */
+
+#ch07-1-b {
+	font-size: 14px;
+
+}
+
+#ch07-1-b h1 {
+	font-size: 20px;
+
+
+}
+
+#ch07-1-b h2 {
+	font-size: 16px;
+
+}
+
+
+/* P56 chapter4/c04-01-c */
+/* htmlの文字サイズは16px程度 */
+html {
+	font-size: 14px;
+}
+#ch07-1-c h1 {
+	font-size: 1.4rem;
+}
+
+
+
+#ch07-1-c h2 {
+	font-size: 1.14rem;
+}
+
+
+/* 行間 */
+/* P58 chapter4/c04-02 */
+
+#ch07-2 {
+	line-height: 1.7;
+}
+
+/* 太字 */
+/* P60 chapter4/c04-03 */
+
+#ch07-3 {
+	line-height: 1.7;
+}
+
+#ch07-3 .lead {
+	font-weight: bold;
+}
+
+
+
+/* フォント */
+/* P62 chapter4/c04-04-a */
+
+#ch07-4-a {
+	line-height: 1.7;
+	font-family: "Hiragino kaku Gothic ProN", "ヒラギノ角ゴ　ProN", Meiryo "MS Pゴシック", sans-serif;
+}
+
+#ch07-4-a .lead {
+	font-weight: bold;
+}
+
+/* P63 chapter4/c04-04-b */
+
+#ch07-4-b {
+	line-height: 1.7;
+	font-family: sans-serif;
+}
+
+#ch07-4-b .lead {
+	font-weight: bold;
+}
+
+
+/* P65 chapter4/c04-04-c */
+
+#ch07-4-c {
+	line-height: 1.7;
+	font-family: 'Noto Sans Japanese', sans-serif;
+}
+
+#ch07-4-c .lead {
+	font-weight: bold;
+}
+
+
+/* 行揃え */
+/* P69 chapter4/c04-05-a */
+
+#ch07-5-a {
+	line-height: 1.7;
+	font-family: sans-serif;
+}
+
+#ch07-5-a .headline {
+	text-align: center;
+}
+
+#ch07-5-a .lead {
+	font-weight: bold;
+}
+
+/* P70 chapter4/c04-05-b */
+
+#ch07-5-b {
+	line-height: 1.7;
+	font-family: sans-serif;
+}
+
+#ch07-5-b p {
+	text-align: justify;
+
+}
+
+#ch07-5-b .headline {
+	text-align: center;
+}
+
+#ch07-5-b .lead {
+	font-weight: bold;
+}
+
+
+/* 文字下げ */
+/* P71 chapter4/c04-06 */
+
+#ch07-6 {
+	font-family: sans-serif;
+}
+
+#ch07-6 p {
+	text-align: justify;
+}
+#ch07-6 .headline {
+	text-align: center;
+}
+
+#ch07-6 .lead {
+	font-weight: bold;
+}
+
+#ch07-6 .note {
+	padding-left: 1em;
+	text-indent: -1em;
+
+}
+
+
+/* 文字の色 */
+/* P73 chapter4/c04-07-a */
+
+#ch07-7-a {
+	color: #002a5a;
+
+}
+
+/* P75 chapter4/c04-07-b */
+
+#ch07-7-b {
+	color: rgba(0, 42, 90, 0.5);
+
+}
+
+/* P76 chapter4/c04-07-c */
+
+#ch07-7-c {
+	color: #002a5a;
+}
+
+#ch07-7-c .important {
+	color: #ff0000;
+
+}
+
+
+/* サブタイトル */
+/* P79 chapter4/c04-08 */
+
+#ch07-8 h1 {
+	font-size: 1.5em;
+	line-height: 0.7em;
+	font-weight: normal;
+
+}
+#ch07-8 h1 .subtitle {
+	font-size: 0.7em;
+	font-weight: normal;
+	
+}
