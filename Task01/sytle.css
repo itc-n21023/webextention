@@ -1,26 +1,26 @@
 @charset "utf-8";
-body {
+.body {
 	font-family: sans-serif;
 }
 
-class  {
+.class  {
 	border-collapse: collapse;
 }
 
-class  {
+.class  {
 	border: 1px solid #8fbac8;
 	padding: 8px;
 } 
 
-h1 {
+.h1 {
 	font-size: 21px:
 }
 
-h2 {
+.h2 {
 	font-size: 18px;
 }
 
-p {
+.p {
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -51,16 +51,36 @@ p {
 	color: #000FF;
 }
 
-manabi { 
+.manabi { 
 	color: #000FF;
 }
 
-karikyura { 
+.karikyura { 
 	color: #000FF;
 }
 
 .item {
 	background: url(https://www.it-college.ac.jp/2020/wp-content/themes/it-college/img/img-cys2.jpg) #fafafa;
+}
+
+.manabi {
+	line-height: 30px
+}
+
+.manabi2 {
+	line-weight: 30px
+}
+
+.karikyura2 {
+	text-align: left;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+a:active {
+	color: red;
 }
 
 
