@@ -1,0 +1,66 @@
+@charset "utf-8";
+body {
+	font-family: sans-serif;
+}
+
+class  {
+	border-collapse: collapse;
+}
+
+class  {
+	border: 1px solid #8fbac8;
+	padding: 8px;
+} 
+
+h1 {
+	font-size: 21px:
+}
+
+h2 {
+	font-size: 18px;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.osusume {
+	padding: 16ox
+	border: 1px solid #095cdc;
+}
+
+.osusume li {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+job {
+	color: #000FF;
+}
+
+job2 { 
+	color: #000FF;
+}
+
+osusume { 
+	color: #000FF;
+}
+
+osusume2 {
+	color: #000FF;
+}
+
+manabi { 
+	color: #000FF;
+}
+
+karikyura { 
+	color: #000FF;
+}
+
+.item {
+	background: url(https://www.it-college.ac.jp/2020/wp-content/themes/it-college/img/img-cys2.jpg) #fafafa;
+}
+
+
