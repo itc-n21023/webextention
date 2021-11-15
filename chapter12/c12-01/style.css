@@ -1,0 +1,48 @@
+@charset "utf-8";
+body  {
+    margin: 0;
+}
+.container {
+    margin: 0 auto 0 auto;
+    max-width: 1000px;
+    border: solid 1px #ff0000;
+}
+section .container {
+    display: flex;
+    flex-flow: column;
+}
+nav {
+    margin-bottom: 20px;
+}
+footer {
+    margin-top: 20px;
+}
+.header-inner {
+    background: #bad7f5;
+}
+.nav-inner {
+    color: #fff;
+    background: #0086f9;
+}
+.main-inner{
+    background: #fffde3;
+    height: 400px;
+}
+.sidebar-inner {
+    background: #c0f5b9;
+}
+.footer-inner {
+    background: #bad7f5;
+}
+body {
+    color: #444;
+}
+main p:last-child {
+    margin-bottom: 0;
+}
+.main-title {
+    margin: 0;
+}
+.copyright {
+    margin: 0;
+}
