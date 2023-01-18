@@ -1,0 +1,404 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #f5ffff;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-right: 35px;
+}
+
+body {
+    font-family: 'Sawarabi Gothic', sans-serif;
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.85;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    word-wrap: break-word;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #3584bb;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.menu-btn span:before {
+    bottom: 8px;
+}
+
+.menu-btn span:after {
+    top: 8px;
+}
+
+#menu-btn-check:checked~.menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
+    /*メニューオープン時は真ん中の線を透明にする*/
+}
+
+#menu-btn-check:checked~.menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+#menu-btn-check:checked~.menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #3584bb;
+}
+
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    /*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #3584bb;
+    transition: all 0.5s;
+    /*アニメーション設定*/
+}
+
+#menu-btn-check:checked~.menu-content {
+    left: 0;
+    /*メニューを画面内へ*/
+}
+
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+ul figure {
+    margin: 0;
+    padding: 0;
+}
+
+p,
+td,
+th,
+li {
+    line-height: 1.8;
+}
+
+.name {
+    font-family: 'Sawarabi Mincho',
+        sans-serif;
+    background-color: lightcyan;
+    border: #ccc;
+    padding: 8px;
+}
+
+.v_line {
+    margin-left: 220px;
+    width: 5px;
+    height: 500px;
+    background-color: black;
+    transform: translate(0px, -360px);
+}
+
+.search {
+    font-family: 'Sawarabi Mincho',
+        sans-serif;
+    transform: translate(0px, -43px);
+    padding-left: 500px;
+}
+
+.sibo {
+    font-family: 'Sawarabi Mincho',
+        sans-serif;
+}
+
+.filter {
+    font-family: 'Sawarabi Mincho',
+        sans-serif;
+    background-color: lightcyan;
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 200px;
+}
+
+.musimegane {
+    transform: translate(450px, 5px);
+}
+
+.important {
+    color: red;
+}
+
+.important2 {
+    color: red;
+}
+
+a {
+    color: #0073bc;
+    text-decoration: none;
+}
+
+a:link {
+    color: #0073bc;
+}
+
+a:visited {
+    color: #02315c;
+}
+
+a:hover {
+    color: #b7dbf2;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #4ca4e8;
+}
+
+.sweet-fr {
+    /*transform: translate(250px, -400px);*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 175px;
+    float: left;
+    margin: 8px 0 8px 8px;
+}
+
+.sweet {
+    /* transform: translate(250px, -400px);*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 175px;
+    float: left;
+    margin: 8px 0 8px 8px;
+}
+
+.sweet {
+    /* transform: translate(442px, -844px);*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 175px;
+    float: left;
+    margin: 8px 0 8px 8px;
+}
+
+.sweet {
+    /*transform: translate(635px, -1032px);*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 175px;
+    float: left;
+    margin: 8px 0 8px 8px;
+}
+
+.sweet {
+    /* transform: translate(550px, -860px);*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 175px;
+    float: left;
+    margin: 8px 0 8px 8px;
+}
+
+.sweet {
+    /**transform: translate(900px, -1025px);*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 175px;
+    float: left;
+    margin: 8px 0 8px 8px;
+}
+
+.sweet {
+    /**transform: translate(1200px, -1200px);*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 175px;
+    float: left;
+    margin: 8px 0 8px 8px;
+}
+
+.sweet {
+    /**transform: translate(1070px, -1610px);*/
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 175px;
+    float: left;
+    margin: 8px 0 8px 8px;
+}
+
+.wrapper {
+    overflow: hidden;
+    transform: translate(220px, -420px);
+    background-color: #000
+}
+
+input[type="search"] {
+    width: 200px;
+    /*--幅--*/
+    padding: 10px;
+    /*--余白--*/
+    font-size: 16px;
+    /*--文字サイズ--*/
+    border: solid 2px #cccccc;
+    /*--ボーダー線--*/
+    border-radius: 5px;
+    /*--角丸--*/
+}
+
+/*--focus--*/
+input[type="search"]:focus {
+    background-color: #febe3e;
+    /*--背景色--*/
+}
+
+input[type="submit"] {
+    width: 20%;
+    font-size: 15px;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 0px;
+    text-align: center;
+    background-color: #5c87a6;
+    border: 1px solid #5c87a6;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+/*--hover--*/
+input[type="submit"]:hover {
+    color: #5c87a6;
+    background-color: #ffffff;
+    border: 1px solid #5c87a6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.sentence {
+    transform: translate(225px, -415px);
+}
+
+.sentence2 {
+    transform: translate(440px, -685px);
+}
+
+.sentence3 {
+    transform: translate(640px, -955px);
+}
+
+.sentence4 {
+    transform: translate(845px, -1225px);
+}
+
+.sentence5 {
+    transform: translate(1050px, -1525px);
+}
+
+input[name='refine-btn'] {
+    position: relative;
+    display: none;
+}
+
+input[name='refine-btn']:checked+label {
+    color: #fff;
+    background-color: #db6c34;
+}
+
+[data-filter-view]:not([data-filter-view=""]) [data-filter-key] {
+    display: none;
+}
+
+[data-filter-view][data-filter-view~="日本"] [data-filter-key="日本"],
+[data-filter-view][data-filter-view~="アメリカ"] [data-filter-key="アメリカ"],
+[data-filter-view][data-filter-view~="イギリス"] [data-filter-key="イギリス"],
+[data-filter-view][data-filter-view~="中国"] [data-filter-key="中国"],
+[data-filter-view][data-filter-view~="韓国"] [data-filter-key="韓国"],
+[data-filter-view][data-filter-view~="東南アジア"] [data-filter-key="東南アジア"] {
+    display: block;
+}

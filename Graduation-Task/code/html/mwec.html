@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>all'estro</title>
+    <meta name="description" content="サンプルサイトです">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--=============Google Font ===============-->
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic%7CTeko&display=swap" rel="stylesheet">
+    <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+    <!--自作のCSS-->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/parts.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+</head>
+
+<body>
+
+    <div id="splash">
+        <div id="splash-logo">
+            <div class="loader"></div><br>Loading
+        </div>
+        <!--/splash-->
+    </div>
+    <div class="splashbg"></div>
+    <!---画面遷移用-->
+
+    <div id="container">
+
+        <header id="header">
+            <h1 id="identity"><a href="#"><span class="smoothText"><span class="smoothTextTrigger">all'
+                            estro</span></span></a></h1>
+
+            <div class="fixed">
+                <canvas id="particle"></canvas>
+                <canvas id="waveCanvas"></canvas>
+                <form method="post" action="service.html" method="get">
+                    <div class="search">
+                        <label for="search"></label>
+                        <input type="search" name="s" placeholder="キーワードを入力">
+                    </div>
+                    <form method="post" action="URL" method="get">
+                    </form>
+                </form>
+                <!--<div class="scrolldown3"><span>Scroll</span></div>-->
+                <!--/fixed-->
+            </div>
+        </header>
+
+        <div class="openbtn smoothTrigger">
+            <div class="openbtn-area"><span></span><span></span><span></span></div>
+        </div>
+        <nav id="g-nav">
+            <div id="g-nav-list">
+                <ul>
+                    <li><a href="#header">Top</a></li>
+                    <li><a href="#concept">Concept</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="circle-bg"></div>
+
+
+
+        <footer id="footer">
+            <p><a href="#contact"><span class="smoothText"><span class="smoothTextTrigger">Contact</span></span></a>
+            </p>
+            <small><span class="smoothText"><span class="smoothTextTrigger">&copy; all'estro</span></span></small>
+        </footer>
+
+        <!--/container-->
+    </div>
+
+    <!--=============JS ===============-->
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--印象編　5-17　粒子が集まってタイポグラフィーを形成する-->
+    <script src="../js/particle.js"></script>
+    <!--印象編　9-4-1　SVG アニメーション-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
+    <!--自作のJS-->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
